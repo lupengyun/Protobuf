@@ -1,0 +1,11 @@
+syntax = "proto2";
+option optimize_for=LITE_RUNTIME;
+package com.lupy.proto;
+
+option java_outer_classname= "ProtoPerson";
+
+message Person{
+    optional string name = 1;
+    optional uint32 age = 2;
+}
+

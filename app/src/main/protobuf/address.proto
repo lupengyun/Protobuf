@@ -1,0 +1,17 @@
+syntax = "proto2";
+package com.lupy.proto;
+
+option java_outer_classname='ProtoAddress';
+
+message Address{
+    required string name = 1;
+    required int32 age = 2;
+    optional string email = 3;
+    enum PhoneType{
+         MOBILE = 0;
+         HOME = 1;
+         WORK = 2;
+    }
+    optional PhoneType addressType = 4;
+    repeated string phoneNumber = 5;
+}
